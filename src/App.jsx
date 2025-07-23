@@ -1,8 +1,10 @@
+import { Header } from "./components/Header/Header"
+
 function App() {
 
   return (
     <>
-      <h1>Typography</h1>
+      <Header />
       <p>large</p>
     </>
   )
