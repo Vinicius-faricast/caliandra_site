@@ -3,7 +3,9 @@ import { styled, css } from "styled-components";
 export const Header = styled.header`
     width: 100%;
     border-bottom: 1px solid ${({ theme }) => theme.color.primaryDark};
+    background: ${({ theme }) => theme.color.backgroundNormal};
     padding: 1rem;
+    position: fixed;
 `;
 
 export const NavBar = styled.nav`
@@ -59,19 +61,6 @@ export const linkItem = styled.a`
         color: ${({ theme }) => theme.color.primaryLight};
         border-bottom: 1px solid ${({ theme }) => theme.color.primaryLight}; 
     }
-
-
-    ${props => props.className === "btnWhatsapp" && css`
-        border: 1px solid ${({ theme }) => theme.color.primaryNormal};
-        background: none;
-        cursor: pointer;
-        padding: .5rem 1rem;
-
-        &:hover{
-            background: ${({ theme }) => theme.color.primaryNormal};
-            color: ${({ theme }) => theme.color.font0};
-        }
-    `}
 
     @media(max-width: 768px){
         font-size: 1.5rem;
