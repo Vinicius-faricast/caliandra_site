@@ -2,6 +2,7 @@ import { styled } from "styled-components";
 
 export const HeroContainer = styled.div`
     padding-top: 8rem;
+    padding-bottom: 4rem;
     max-width: 1080px;
     margin: 0 auto;
     display:flex;
