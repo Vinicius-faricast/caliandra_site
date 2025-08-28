@@ -14,6 +14,11 @@ export const PriceSection = () => {
                         <li>Mão..........................R$24</li>
                         <li>Mão..........................R$24</li>
                     </S.PriceList>
+                    <S.PriceList>
+                        <li>Mão..........................R$24</li>
+                        <li>Mão..........................R$24</li>
+                        <li>Mão..........................R$24</li>
+                    </S.PriceList>
                 </S.PricesContainer>
                 <S.SectionImage src={PriceImg} alt="" />
             </S.SectionContainer>
