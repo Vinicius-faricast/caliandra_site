@@ -2,7 +2,7 @@ import {styled} from "styled-components";
 
 export const sectionBody = styled.section`
     width: 100%;
-    padding: 4rem 0;
+    padding: 10rem 0;
     background: ${({ theme }) => theme.color.backgroundDark};
 `;
 
@@ -20,7 +20,7 @@ export const SectionContainer = styled.div`
 `;
 
 export const SectionImage = styled.img`
-    max-width: 40%;
+    max-width: 30%;
 
     @media screen and (max-width: 768px){
         max-width: 90%;
