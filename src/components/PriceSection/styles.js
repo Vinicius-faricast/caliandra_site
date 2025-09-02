@@ -6,7 +6,7 @@ export const SectionBody = styled.section`
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    padding: 4rem 0;
+    padding: 8rem 0;
 
     @media screen and (max-width: 768px){
         background-image: none;
