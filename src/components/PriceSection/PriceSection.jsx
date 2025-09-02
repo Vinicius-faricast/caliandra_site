@@ -3,10 +3,10 @@ import PriceImg from "../../assets/image_prices.svg";
 import detail_price from "../../assets/detail_price.svg";
 export const PriceSection = () => {
     return (
-        <S.SectionBody bg={detail_price}>
+        <S.SectionBody bg={detail_price} id="servicos">
             <S.SectionContainer>
                 <S.PricesContainer>
-                    <S.SectionTitle id="servicos">Serviços</S.SectionTitle>
+                    <S.SectionTitle >Serviços</S.SectionTitle>
                     <S.PriceList>
                         <li>Mão..........................R$24</li>
                         <li>Mão..........................R$24</li>
