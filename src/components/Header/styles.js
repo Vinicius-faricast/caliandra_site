@@ -6,6 +6,7 @@ export const Header = styled.header`
     background: ${({ theme }) => theme.color.backgroundNormal};
     padding: 1rem;
     position: fixed;
+    z-index: 1000;
 `;
 
 export const NavBar = styled.nav`

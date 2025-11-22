@@ -1,5 +1,5 @@
 import * as S from "./styles.js";
-import HistoryImg from "../../assets/image_history.svg"
+import HistoryImg from "../../assets/image_history.svg";
 export const HistorySection = () => {
     return (
         <S.sectionBody id="sobre">
