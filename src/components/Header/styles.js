@@ -30,6 +30,7 @@ export const Menu = styled.ul`
     display: flex;
     gap: 1rem;
     list-style: none;
+    align-items: center;
 
     @media(max-width: 768px){
         display: ${({ open }) => open ? "flex" : "none"};
@@ -49,7 +50,7 @@ export const Menu = styled.ul`
 `;
 
 export const MenuItem = styled.li`
-
+    
 `;
 
 export const linkItem = styled.a`

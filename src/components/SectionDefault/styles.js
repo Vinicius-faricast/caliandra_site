@@ -1,8 +1,6 @@
-import { styled } from "styled-components";
+import styled from "styled-components";
 
-export const HeroContainer = styled.div`
-    padding-top: 8rem;
-    padding-bottom: 4rem;
+export const SectionContainer = styled.div`
     max-width: 1080px;
     margin: 0 auto;
     display:flex;
@@ -15,31 +13,33 @@ export const HeroContainer = styled.div`
     }
 `;
 
-export const HeroImage = styled.img`
-    max-width: 45%;
+export const SectionImage = styled.img`
+    max-width: 30%;
 
     @media screen and (max-width: 768px){
         max-width: 90%;
     }
 `;
 
-export const HeroContent = styled.div`
+export const ContantContainer = styled.div`
     max-width: 40%;
     display: flex;
     flex-direction: column;
     gap: 1rem;
+    align-items: self-start;
 
     @media screen and (max-width: 768px){
         max-width: 90%;
     }
 `;
 
-export const HeroTitle = styled.h1`
-    font-size: 3rem;
-    color: ${({ theme })=> theme.color.primaryNormal};
+export const SectionTitle = styled.h2`
+    font-size: 2rem;
+    color: ${({ theme }) => theme.color.primaryNormal};
+    text-align: center;
 `;
 
-export const HeroDescription = styled.p`
+export const SectionDescription = styled.p`
     font-size: 1.2rem;
-    color: ${({ theme}) => theme.color.primaryDark};
+    text-align: justify;
 `;

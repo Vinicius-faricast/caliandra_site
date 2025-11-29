@@ -24,7 +24,6 @@ export const GlobalStyle = createGlobalStyle`
         background: none;
         font-size: 1.1rem;
         cursor: pointer;
-        padding: .5rem 1rem;
         color: ${({ theme }) => theme.color.primaryNormal};
         transition: all .2s ease-in-out;
 

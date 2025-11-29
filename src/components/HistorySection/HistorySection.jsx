@@ -1,17 +1,10 @@
 import * as S from "./styles.js";
 import HistoryImg from "../../assets/image_history.svg";
-export const HistorySection = () => {
+import { SectionDefault } from "../SectionDefault/SectionDefault.jsx";
+export const HistorySection = ({children}) => {
     return (
         <S.sectionBody id="sobre">
-            <S.SectionContainer >
-                <S.SectionImage src={HistoryImg} alt="" />
-                <S.ContantContainer >
-                    <S.SectionTitle >Conheça nossa história</S.SectionTitle>
-                    <S.SectionDescription>
-                        Lorem ipsum dolor sit amet consectetur. Sit quis nunc massa velit. A sed massa adipiscing pulvinar bibendum libero. Sed ultricies pulvinar pharetra hac purus. At convallis cursus sagittis maecenas non amet lorem ac.Lorem ipsum dolor sit amet consectetur. Sit quis nunc massa velit. A sed massa adipiscing pulvinar bibendum libero. Sed ultricies pulvinar pharetra hac purus. At convallis cursus sagittis maecenas non amet lorem ac.
-                    </S.SectionDescription>
-                </S.ContantContainer>
-            </S.SectionContainer>
+            <SectionDefault src={HistoryImg} title={"Conheça nossa história"} description={children} />
         </S.sectionBody>
     );
 }
