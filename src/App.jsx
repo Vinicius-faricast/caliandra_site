@@ -1,4 +1,5 @@
 import { ContactSection } from "./components/contactSection/ContactSection"
+import { FooterSection } from "./components/FooterSection/FooterSection"
 import { Header } from "./components/Header/Header"
 import { Hero } from "./components/Hero/Hero"
 import { HistorySection } from "./components/HistorySection/HistorySection"
@@ -19,6 +20,7 @@ function App() {
       <ContactSection>
         Descrição exemplo para children
       </ContactSection>
+      <FooterSection/>
     </>
   )
 }

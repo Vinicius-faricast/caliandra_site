@@ -9,7 +9,7 @@ export const SectionContainer = styled.div`
     gap: 3rem;
 
     @media screen and (max-width: 768px){
-        flex-direction: column-reverse;
+        flex-direction: column;
     }
 `;
 
