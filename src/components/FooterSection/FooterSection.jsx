@@ -10,10 +10,10 @@ export const FooterSection = () => {
                 <S.FooterImg src={brandLogo}/>
                 <S.FooterContent>
                     <S.FooterTitle>Redes Sociais</S.FooterTitle>
-                    <div>
-                        <S.FooterLink ><AiOutlineFacebook size={30}/></S.FooterLink>
+                    <S.FooterLinksContainer>
+                        <S.FooterLink href="#" target="_blank"><AiOutlineFacebook size={30}/></S.FooterLink>
                         <S.FooterLink href="https://www.instagram.com/caliandra.esmalteria/" target="_blank"><AiOutlineInstagram size={30}/></S.FooterLink>
-                    </div>
+                    </S.FooterLinksContainer>
                 </S.FooterContent>
                 <S.FooterContent>
                     <S.FooterTitle>Endereço</S.FooterTitle>
