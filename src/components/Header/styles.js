@@ -16,6 +16,7 @@ export const NavBar = styled.nav`
     max-width: 1080px;
     margin: 0 auto;
     z-index: 100;
+    scroll-target-group: auto;
 `;
 
 export const Logo = styled.img`
@@ -50,7 +51,10 @@ export const Menu = styled.ul`
 `;
 
 export const MenuItem = styled.li`
-    
+    & > a:target-current{
+        color: ${({ theme }) => theme.color.primaryLight};
+        border-bottom: 1px solid ${({ theme }) => theme.color.primaryLight}; 
+    }
 `;
 
 export const linkItem = styled.a`

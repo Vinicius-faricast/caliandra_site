@@ -1,12 +1,15 @@
-import {styled} from "styled-components";
+import { styled } from "styled-components";
 
 export const SectionBody = styled.section`
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     background-image: url(${({ bg }) => bg});
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    padding: 8rem 0;
+    padding: 8rem 0 2rem 0;
 
     @media screen and (max-width: 768px){
         background-image: none;
@@ -18,9 +21,9 @@ export const SectionContainer = styled.div`
     max-width: 1080px;
     margin: 0 auto;
     display:flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    gap: 3rem;
+    /* gap: 3rem; */
 
     @media screen and (max-width: 768px){
         width: 100%;
@@ -31,10 +34,14 @@ export const PricesContainer = styled.div`
     display: flex;
     flex-direction: column;
     gap: 1rem;
-    width: fit-content;
+    justify-content: space-around;
+    min-width: 30%;
+    max-width: 40%;
 
-
-    
+    @media screen and (max-width: 768px){
+        min-width: 100%;
+        max-width: 100%;
+    }
 `;
 
 export const SectionTitle = styled.h2`
@@ -46,19 +53,21 @@ export const PriceList = styled.ul`
     list-style: none;
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    gap: 1.5rem;
     padding-bottom: 2rem;
 `;
 
 export const SectionImage = styled.img`
-    max-width: 30%;
+    max-width: 100%;
+`;
+
+export const SectionImageDetail = styled.div`
+    max-width: 40%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
 
     @media screen and (max-width: 768px){
         display: none;
     }
-`;
-
-export const SectionImageDetail = styled.img`
-    max-height: 25rem;
-    
 `;
