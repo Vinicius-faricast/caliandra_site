@@ -5,7 +5,7 @@ import { ContactButton } from "../ContactButton/ContactButton";
 export const ContactSection = ({children}) => {
     
     return (
-        <S.SectionBody>
+        <S.SectionBody id="contato">
             <SectionDefault src={HistoryImg} title={"Contate-nos"} description={children}>
                 <ContactButton href="#whatsapp">Entrar em contato</ContactButton>
             </SectionDefault>
