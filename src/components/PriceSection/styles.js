@@ -2,11 +2,14 @@ import { styled } from "styled-components";
 
 export const SectionBody = styled.section`
     width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
     background-image: url(${({ bg }) => bg});
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center;
-    padding: 8rem 0;
+    padding: 8rem 0 2rem 0;
 
     @media screen and (max-width: 768px){
         background-image: none;

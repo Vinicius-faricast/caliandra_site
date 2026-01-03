@@ -2,6 +2,7 @@ import * as S from "./styles.js";
 import PriceImg from "../../assets/image_prices.svg";
 import detail_price from "../../assets/detail_price.svg";
 import { ItemPrice } from "./ItemPrice/ItemPrice.jsx";
+import { ItemPromotion } from "./ItemPromotion/ItemPromotion.jsx";
 export const PriceSection = () => {
     const listPrices = [
         {
@@ -81,6 +82,7 @@ export const PriceSection = () => {
                     <S.SectionImage src={PriceImg} alt="" />
                 </S.SectionImageDetail>
             </S.SectionContainer>
+            <ItemPromotion />
         </S.SectionBody>
     )
 }
